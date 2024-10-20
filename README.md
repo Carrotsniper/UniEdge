@@ -12,7 +12,7 @@
    ```bash
    conda env create -f environment.yaml
    ```
-4. 运行代码：
+4. Run testing：
    ```bash
    python test.py
    ```
