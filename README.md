@@ -6,7 +6,7 @@
 2. Enter the project and unzip dataset files：
    ```bash
    cd UniEdge
-   unzip file.zip
+   unzip dataset.zip
    ```
 3. Install environments：
    ```bash
