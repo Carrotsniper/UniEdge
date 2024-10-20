@@ -1,14 +1,12 @@
-# Title
-
-Unified Spatial-Temporal Edge-Enhanced Graph Networks for Pedestrian Trajectory Prediction
-
-1. Clone the project into local machine：
+# Unified Spatial-Temporal Edge-Enhanced Graph Networks for Pedestrian Trajectory Prediction
+1. Clone the project into a local machine：
    ```bash
    git clone https://github.com/Carrotsniper/UniEdge.git
    ```
-2. Enter the project：
+2. Enter the project and unzip dataset files：
    ```bash
    cd UniEdge
+   unzip file.zip
    ```
 3. Install environments：
    ```bash
@@ -16,7 +14,7 @@ Unified Spatial-Temporal Edge-Enhanced Graph Networks for Pedestrian Trajectory 
    ```
 4. 运行代码：
    ```bash
-   python your-script.py
+   python test.py
    ```
 
 
