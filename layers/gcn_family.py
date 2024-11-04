@@ -110,10 +110,8 @@ class GCNConv(MessagePassing):
         self.bias.data.zero_()
 
     def forward(self, input, edge_index, edge_weight):
-        # 动态确定 num_nodes
         num_nodes = input.size(0)
 
-        # 根据 num_nodes 动态创建 LayerNorm（如果尚未创建）
         self.layer_norm = LayerNorm([num_nodes, self.out_channels]).to(input.device)
 
         x = self.lin(input)
@@ -177,19 +175,16 @@ class HodgeLaguerreConvSDD(MessagePassing):
         k = 1
 
         if len(self.lins) > 1:
-            # 在reshape之前检查x的元素数
             if x.nelement() > 0:
                 x = x.reshape(xshape[0],-1)
                 Tx_1 = x - self.propagate(edge_index, x=x, norm=norm, size=None)
                 if len(xshape) >= 3:
-                    # 再次检查元素数，因为propagate操作可能改变了x的内容
                     if Tx_1.nelement() > 0:
                         Tx_1 = Tx_1.view(xshape[0], xshape[1], -1)
                 out = out + self.lins[1](Tx_1)
 
         for lin in self.lins[2:]:
             inshape = Tx_1.shape
-            # 在reshape之前检查Tx_1的元素数
             if Tx_1.nelement() > 0:
                 Tx_1 = Tx_1.view(inshape[0],-1)
             Tx_2 = self.propagate(edge_index, x=Tx_1, norm=norm, size=None)
