@@ -17,5 +17,6 @@
    python test.py
    ```
 
-
+### Acknowledgement
+Part of our code is borrowed from [DDL](https://github.com/sydney-machine-learning/pedestrianpathprediction), [GP-GRAPH](https://github.com/InhwanBae/GPGraph), [iTransformer](https://github.com/thuml/iTransformer), [CaST] (https://github.com/yutong-xia/CaST). We thank the authors for releasing their code and models.
 
