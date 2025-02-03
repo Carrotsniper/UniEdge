@@ -18,5 +18,6 @@
    ```
 
 ### Acknowledgement
-Part of our code is borrowed from [DDL](https://github.com/sydney-machine-learning/pedestrianpathprediction), [GP-GRAPH](https://github.com/InhwanBae/GPGraph), [iTransformer](https://github.com/thuml/iTransformer), [CaST] (https://github.com/yutong-xia/CaST). We thank the authors for releasing their code and models.
+Part of our code is borrowed from [DDL](https://github.com/sydney-machine-learning/pedestrianpathprediction), [GP-GRAPH](https://github.com/InhwanBae/GPGraph), [iTransformer](https://github.com/thuml/iTransformer), 
+[CaST](https://github.com/yutong-xia/CaST), [GATv2](https://github.com/tech-srl/how_attentive_are_gats). We thank the authors for releasing their code and models.
 
