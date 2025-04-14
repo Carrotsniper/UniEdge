@@ -1,3 +1,4 @@
+[![GitHub license](https://img.shields.io/github/license/Carrotsniper/UniEdge)](https://github.com/Carrotsniper/UniEdge/blob/main/LICENSE)
 ## Unified Spatial-Temporal Edge-Enhanced Graph Networks for Pedestrian Trajectory Prediction
 
 This is the official implementation of our paper **UniEdge** [https://arxiv.org/abs/2502.02504](https://arxiv.org/abs/2502.02504).
